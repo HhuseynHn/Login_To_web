@@ -6,12 +6,16 @@
   box-sizing: border-box;
 }
 body {
-  height: 4000px;
-  background-image: url(./img/Flowrjpg.jpg);
+  z-index: 1000;
   background-repeat: no-repeat;
   background-size: cover;
-  
+  height: 1000px;
+  background-color: rgb(3, 3, 3);
 }
+.backrImg img {
+  opacity: 0.2;
+}
+
 main {
   margin: auto;
   display: flex;
@@ -26,13 +30,15 @@ h2 {
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 30px;
-
 }
 .box {
-    position: fixed;
+  position: relative;
+  position: fixed;
+  left: 600px;
+  top: 300px;
   padding-top: 15px;
   padding-bottom: 20px;
-  background-image: url(./img/Log_Bckgrn.jpg);
+  background-image: url("./img/Log_Bckgrn.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 300px;
@@ -40,7 +46,6 @@ h2 {
   border: solid;
   border-color: rgb(32, 27, 123);
   border-width: 2px;
-  opacity: 0.7;
 }
 input {
   width: 120%;
@@ -49,14 +54,15 @@ input {
   border-radius: 5px;
   padding: 15px 7px;
 }
-.login{
-    margin-top: 15px;
-    border-radius: 5px;
-    padding: 8px 15px;
-    color: #0e0b0b;
-    font-size: 12px;
+.login {
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 8px 15px;
+  color: #0e0b0b;
+  font-size: 12px;
 }
-#email, #pasword{
-    color: #d5d1d1;
-    font-size: 12px;
+#email,
+#pasword {
+  color: #d5d1d1;
+  font-size: 12px;
 }
